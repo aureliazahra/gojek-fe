@@ -172,8 +172,28 @@ class _MyHomePageState extends State<MyHomePage> {
                       ),
                     )
                   ],
-                )
+                ),
                 // END BAGIAN DUA DARI CARD GOPAY
+
+                // BAGIAN 3 DAIR CARD GOPSY
+                Row(children: [
+                  Column(
+                    children: [
+                      Container(
+                        width: 24,
+                        height: 24,
+                        decoration: BoxDecoration(
+                          color: Colors.white,
+                          borderRadius: BorderRadius.circular(8),
+                        ),
+                        child: Image.asset(
+                          ''
+                        ),
+                      )
+                    ],
+                  )
+                ],)
+                // END BAGIAN 3 DARI CARD GOPAY
               ],
             ),
           ),
