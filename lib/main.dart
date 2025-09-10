@@ -136,6 +136,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         ),
                       ),
                     ),
+                    SizedBox(height: 6),
                     Container(
                       height: 78,
                       width: 127,
@@ -146,6 +147,28 @@ class _MyHomePageState extends State<MyHomePage> {
                       decoration: BoxDecoration(
                           color: Colors.white,
                           borderRadius: BorderRadius.circular(8),
+                      ),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Image.asset('assets/images/gopay.png', height: 14),
+                          const SizedBox(height: 4),
+                          Text(
+                            'Rp.12.000.000',
+                            style: TextStyle(
+                              fontWeight: FontWeight.w700,
+                              fontSize: 15,
+                            ),
+                          ),
+                          Text(
+                            'Tap for history',
+                            style: TextStyle(
+                              fontWeight: FontWeight.w600,
+                              fontSize: 10,
+                              color: Color(0xFF097210),
+                            ),
+                          )
+                        ],
                       ),
                     )
                   ],
