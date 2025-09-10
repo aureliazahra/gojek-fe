@@ -131,9 +131,8 @@ class _MyHomePageState extends State<MyHomePage> {
                       width: 118,
                       decoration: const BoxDecoration(
                         color: Color(0xFF9CCDDB),
-                        borderRadius: BorderRadius.vertical(
-                          bottom: Radius.circular(8)
-                        ),
+                        borderRadius:
+                            BorderRadius.vertical(bottom: Radius.circular(8)),
                       ),
                     ),
                     SizedBox(height: 6),
@@ -145,8 +144,8 @@ class _MyHomePageState extends State<MyHomePage> {
                         vertical: 8,
                       ),
                       decoration: BoxDecoration(
-                          color: Colors.white,
-                          borderRadius: BorderRadius.circular(8),
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(8),
                       ),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
@@ -176,23 +175,82 @@ class _MyHomePageState extends State<MyHomePage> {
                 // END BAGIAN DUA DARI CARD GOPAY
 
                 // BAGIAN 3 DAIR CARD GOPSY
-                Row(children: [
-                  Column(
+                SizedBox(width: 20,),
+                Expanded(
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
-                      Container(
-                        width: 24,
-                        height: 24,
-                        decoration: BoxDecoration(
-                          color: Colors.white,
-                          borderRadius: BorderRadius.circular(8),
-                        ),
-                        child: Image.asset(
-                          ''
-                        ),
-                      )
+                      Column(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          Container(
+                            width: 27,
+                            height: 27,
+                            decoration: BoxDecoration(
+                              color: Colors.white,
+                              borderRadius: BorderRadius.circular(8),
+                            ),
+                            child: Image.asset('assets/images/pay.png'),
+                          ),
+                          Text(
+                            "Pay",
+                            style: TextStyle(
+                              fontSize: 14,
+                              fontWeight: FontWeight.w600,
+                              color: Colors.white,
+                            ),
+                          ),
+                        ],
+                      ),
+                      Column(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          Container(
+                            width: 27,
+                            height: 27,
+                            decoration: BoxDecoration(
+                              color: Colors.white,
+                              borderRadius: BorderRadius.circular(8),
+                            ),
+                            child: Image.asset('assets/images/topup.png'),
+                          ),
+                          Text(
+                            "Top Up",
+                            style: TextStyle(
+                              fontSize: 14,
+                              fontWeight: FontWeight.w600,
+                              color: Colors.white,
+                            ),
+                          ),
+                        ],
+                      ),
+                      Column(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          Container(
+                            width: 27,
+                            height: 27,
+                            decoration: BoxDecoration(
+                              color: Colors.white,
+                              borderRadius: BorderRadius.circular(8),
+                            ),
+                            child: Image.asset('assets/images/explore.png'),
+                          ),
+                          Text(
+                            "Explore",
+                            style: TextStyle(
+                              fontSize: 14,
+                              fontWeight: FontWeight.w600,
+                              color: Colors.white,
+                            ),
+                          ),
+                        ],
+                      ),
                     ],
-                  )
-                ],)
+                  ),
+                ),
+                SizedBox(width: 20,)
                 // END BAGIAN 3 DARI CARD GOPAY
               ],
             ),
