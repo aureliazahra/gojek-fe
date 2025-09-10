@@ -96,28 +96,61 @@ class _MyHomePageState extends State<MyHomePage> {
                 borderRadius: BorderRadius.circular(15)),
             child: Row(
               children: [
+                // BAGIAN SATU DARI CARD GOPAY
+                Padding(
+                  padding: const EdgeInsets.all(10.0),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Container(
+                        width: 2,
+                        height: 8,
+                        decoration: BoxDecoration(
+                            color: const Color(0xFFBBBBBB),
+                            borderRadius: BorderRadius.circular(1)),
+                      ),
+                      const SizedBox(height: 4),
+                      Container(
+                        width: 2,
+                        height: 8,
+                        decoration: BoxDecoration(
+                          color: Colors.white,
+                          borderRadius: BorderRadius.circular(1),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                // END BAGIAN SATU CARD GOPAY
+
+                // BAGIAN 2 DARI CARD GOPAY
                 Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Container(
-                      width: 2,
-                      height: 8,
-                      decoration: BoxDecoration(
-                        color: const Color(0xFFBBBBBB),
-                        borderRadius: BorderRadius.circular(1)
+                      height: 11,
+                      width: 118,
+                      decoration: const BoxDecoration(
+                        color: Color(0xFF9CCDDB),
+                        borderRadius: BorderRadius.vertical(
+                          bottom: Radius.circular(8)
+                        ),
                       ),
                     ),
-                    const SizedBox(height: 4),
                     Container(
-                      width: 2,
-                      height: 8,
-                      decoration: BoxDecoration(
-                        color: Colors.white,
-                        borderRadius: BorderRadius.circular(1),
+                      height: 78,
+                      width: 127,
+                      padding: const EdgeInsets.symmetric(
+                        horizontal: 6,
+                        vertical: 8,
                       ),
-                    ),
+                      decoration: BoxDecoration(
+                          color: Colors.white,
+                          borderRadius: BorderRadius.circular(8),
+                      ),
+                    )
                   ],
-                ),
+                )
+                // END BAGIAN DUA DARI CARD GOPAY
               ],
             ),
           ),
