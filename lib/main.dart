@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:nggojeg/menu_lainnya.dart';
 
 void main() {
   runApp(const MyApp());
@@ -374,7 +375,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       Container(
                         width: 50,
                         height: 50,
-                        child: Image.asset("assets/images/gotix.png", width: 50,),
+                        child: Image.asset("assets/images/gotix2.png", width: 50,),
                       ),
                       const SizedBox(height: 9,),
                       Text(
@@ -385,21 +386,24 @@ class _MyHomePageState extends State<MyHomePage> {
                       ),
                     ],
                   ),
-                  Column(
-                    children: [
-                      Container(
-                        width: 50,
-                        height: 50,
-                        child: Image.asset("assets/images/more.png", width: 50,),
-                      ),
-                      const SizedBox(height: 9,),
-                      Text(
-                        'More',
-                        style: TextStyle(
-                          fontSize: 12,
+                  GestureDetector(
+                    onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => MenuLainnyaWidget(),)),
+                    child: Column(
+                      children: [
+                        Container(
+                          width: 50,
+                          height: 50,
+                          child: Image.asset("assets/images/more.png", width: 50,),
                         ),
-                      ),
-                    ],
+                        const SizedBox(height: 9,),
+                        Text(
+                          'More',
+                          style: TextStyle(
+                            fontSize: 12,
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
                 ],
               ),
