@@ -8,6 +8,21 @@ class MenuLainnyaWidget extends StatelessWidget {
     return Scaffold(
       body: ListView(
         children: [
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 20),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                SizedBox(
+                  height: 10,
+                ),
+                Text(
+                  "Loyalty",
+                  style: TextStyle(fontSize: 14),
+                ),
+              ],
+            ),
+          ),
           ListTile(
             leading: Image.asset("assets/images/goclub.png"),
             title: Text(
@@ -22,6 +37,21 @@ class MenuLainnyaWidget extends StatelessWidget {
               style: TextStyle(fontSize: 14),
             ),
           ),
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 20),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                SizedBox(
+                  height: 10,
+                ),
+                Text(
+                  "Covid-19 Resources",
+                  style: TextStyle(fontSize: 14),
+                ),
+              ],
+            ),
+          ),
           ListTile(
             leading: Image.asset("assets/images/gomed.png"),
             title: Text(
@@ -34,6 +64,21 @@ class MenuLainnyaWidget extends StatelessWidget {
             subtitle: Text(
               "Medical assistance at your fingertips",
               style: TextStyle(fontSize: 14),
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 20),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                SizedBox(
+                  height: 10,
+                ),
+                Text(
+                  "Food delivey and shopping",
+                  style: TextStyle(fontSize: 14),
+                ),
+              ],
             ),
           ),
           ListTile(

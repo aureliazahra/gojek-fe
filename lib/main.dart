@@ -35,7 +35,8 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: SingleChildScrollView(   // ✅ dipindah ke dalam Scaffold
+      body: SingleChildScrollView(
+        // ✅ dipindah ke dalam Scaffold
         child: Column(
           children: [
             // header
@@ -45,11 +46,24 @@ class _MyHomePageState extends State<MyHomePage> {
               child: Row(
                 children: [
                   Expanded(
-                    child: Container(
-                      color: Colors.grey,
-                      height: 59,
+                    child: TextFormField(
+                      decoration: InputDecoration(
+                        prefixIcon: Icon(Icons.search, size: 20, color: Colors.grey,),
+                        hintText: 'Find services, food, or places',
+                        hintStyle: TextStyle(
+                          fontSize: 14,
+                          color: Colors.grey,
+                        ),
+                        fillColor: Colors.white,
+                        filled: true,
+                        border: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(30),
+                          borderSide: BorderSide.none,
+                        ),
+                      ),
                     ),
                   ),
+                  SizedBox(width: 10,),
                   SizedBox(
                     width: 43,
                     height: 43,
@@ -158,7 +172,8 @@ class _MyHomePageState extends State<MyHomePage> {
                           children: [
                             Image.asset('assets/images/gopay.png', height: 14),
                             const SizedBox(height: 4),
-                            FittedBox( // ✅ biar ga overflow
+                            FittedBox(
+                              // ✅ biar ga overflow
                               child: Text(
                                 'Rp.12.000.000',
                                 style: const TextStyle(
@@ -279,9 +294,14 @@ class _MyHomePageState extends State<MyHomePage> {
                       Container(
                         width: 50,
                         height: 50,
-                        child: Image.asset("assets/images/goride.png", width: 50,),
+                        child: Image.asset(
+                          "assets/images/goride.png",
+                          width: 50,
+                        ),
                       ),
-                      const SizedBox(height: 9,),
+                      const SizedBox(
+                        height: 9,
+                      ),
                       Text(
                         'GoRIde',
                         style: TextStyle(
@@ -295,9 +315,14 @@ class _MyHomePageState extends State<MyHomePage> {
                       Container(
                         width: 50,
                         height: 50,
-                        child: Image.asset("assets/images/gocar.png", width: 50,),
+                        child: Image.asset(
+                          "assets/images/gocar.png",
+                          width: 50,
+                        ),
                       ),
-                      const SizedBox(height: 9,),
+                      const SizedBox(
+                        height: 9,
+                      ),
                       Text(
                         'GoCar',
                         style: TextStyle(
@@ -311,9 +336,14 @@ class _MyHomePageState extends State<MyHomePage> {
                       Container(
                         width: 50,
                         height: 50,
-                        child: Image.asset("assets/images/gofood.png", width: 50,),
+                        child: Image.asset(
+                          "assets/images/gofood.png",
+                          width: 50,
+                        ),
                       ),
-                      const SizedBox(height: 9,),
+                      const SizedBox(
+                        height: 9,
+                      ),
                       Text(
                         'GoFood',
                         style: TextStyle(
@@ -327,9 +357,14 @@ class _MyHomePageState extends State<MyHomePage> {
                       Container(
                         width: 50,
                         height: 50,
-                        child: Image.asset("assets/images/gosend.png", width: 50,),
+                        child: Image.asset(
+                          "assets/images/gosend.png",
+                          width: 50,
+                        ),
                       ),
-                      const SizedBox(height: 9,),
+                      const SizedBox(
+                        height: 9,
+                      ),
                       Text(
                         'GoSend',
                         style: TextStyle(
@@ -343,9 +378,14 @@ class _MyHomePageState extends State<MyHomePage> {
                       Container(
                         width: 50,
                         height: 50,
-                        child: Image.asset("assets/images/gomart.png", width: 50,),
+                        child: Image.asset(
+                          "assets/images/gomart.png",
+                          width: 50,
+                        ),
                       ),
-                      const SizedBox(height: 9,),
+                      const SizedBox(
+                        height: 9,
+                      ),
                       Text(
                         'GoMart',
                         style: TextStyle(
@@ -359,9 +399,14 @@ class _MyHomePageState extends State<MyHomePage> {
                       Container(
                         width: 50,
                         height: 50,
-                        child: Image.asset("assets/images/gotagihan.png", width: 50,),
+                        child: Image.asset(
+                          "assets/images/gotagihan.png",
+                          width: 50,
+                        ),
                       ),
-                      const SizedBox(height: 9,),
+                      const SizedBox(
+                        height: 9,
+                      ),
                       Text(
                         'GoPulsa',
                         style: TextStyle(
@@ -375,9 +420,14 @@ class _MyHomePageState extends State<MyHomePage> {
                       Container(
                         width: 50,
                         height: 50,
-                        child: Image.asset("assets/images/gotix2.png", width: 50,),
+                        child: Image.asset(
+                          "assets/images/gotix2.png",
+                          width: 50,
+                        ),
                       ),
-                      const SizedBox(height: 9,),
+                      const SizedBox(
+                        height: 9,
+                      ),
                       Text(
                         'GoClub',
                         style: TextStyle(
@@ -387,15 +437,24 @@ class _MyHomePageState extends State<MyHomePage> {
                     ],
                   ),
                   GestureDetector(
-                    onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => MenuLainnyaWidget(),)),
+                    onTap: () => Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => MenuLainnyaWidget(),
+                        )),
                     child: Column(
                       children: [
                         Container(
                           width: 50,
                           height: 50,
-                          child: Image.asset("assets/images/more.png", width: 50,),
+                          child: Image.asset(
+                            "assets/images/more.png",
+                            width: 50,
+                          ),
                         ),
-                        const SizedBox(height: 9,),
+                        const SizedBox(
+                          height: 9,
+                        ),
                         Text(
                           'More',
                           style: TextStyle(
@@ -409,7 +468,7 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
             ),
             // end menu layanan gojek
-            
+
             // lainnya
             Padding(
               padding: const EdgeInsets.all(20.0),
